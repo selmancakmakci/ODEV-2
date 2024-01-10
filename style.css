@@ -1,0 +1,150 @@
+.dropdown {
+  position: relative;
+  display: inline-block;
+  width: 30em;
+}
+
+/* Dropdown içeriğini gizle */
+.dropdown-content {
+  display: none;
+  position: absolute;
+
+  left: 50%; /* Butonun sağ tarafında açılması için */
+  top: 0.6em; /* Butonun üst hizasında açılması için */
+
+  min-width: 160px;
+}
+
+/* Butonlar */
+.dropdown-content button {
+  color: black;
+  padding: 6px 6px;
+  text-decoration: none;
+  display: block;
+  background: none;
+  border: 1px solid;
+  border-radius: 10px;
+  width: 100%;
+  text-align: left;
+  border-color: red;
+  background-color: azure;
+  cursor: pointer;
+  font-weight: bolder;
+}
+.dropbtn {
+  width: 7em;
+  height: 4em;
+
+  border-radius: 25px;
+  border: 2px solid;
+  cursor: pointer;
+  margin-top: 4em;
+  margin-left: 2em;
+  font-weight: bolder;
+  font-size: 25px;
+  border-color: red;
+  background-color: azure;
+}
+
+.dropdown-content button:hover {
+  background-color: #d7c3c3;
+  border-radius: 10px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+#tableContainer {
+  text-align: center;
+  margin: auto;
+  border: 1px solid;
+  width: 56em;
+  border-radius: 15px;
+  background-color: bisque;
+}
+
+#altKisim {
+  border: 1px solid;
+  margin: auto;
+  width: 56em;
+  height: 19em;
+  border-radius: 15px;
+  background-color: bisque;
+  margin-top: 20px;
+}
+
+#myTable {
+  border: 2px solid red;
+  padding: 10px 10px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+td {
+  font-weight: bolder;
+  font-size: 15px;
+}
+
+ol {
+  border: 1px solid;
+  width: 15em;
+  max-height: 15em;
+
+  padding-bottom: 20px;
+  border-radius: 20px;
+  float: right;
+  margin-top: 1.5em;
+  margin-right: 6em;
+  background-color: azure;
+
+  overflow: auto;
+}
+
+li {
+  color: red;
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 2px;
+}
+
+table thead th {
+  padding-left: 10px;
+  padding-right: 10px;
+  color: red;
+  font-size: 25px;
+}
+
+#myNewTable {
+  border: 2px solid red;
+  text-align: center;
+  padding: 10px 10px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.theadClass {
+  padding-left: 10px;
+  padding-right: 10px;
+  color: red;
+  font-size: 25px;
+}
+
+#eOfThe {
+  text-align: center;
+}
+
+#enAlt {
+  border: 1px solid;
+  width: 56em;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 15px;
+  background-color: bisque;
+}

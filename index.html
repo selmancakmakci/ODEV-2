@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>ARRAY METHODS</title>
+  </head>
+  <body>
+    <div id="tableContainer">
+      <h1>WORKERS LIST</h1>
+      <table id="myTable">
+        <thead>
+          <tr id="myTableHeader">
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Successful</th>
+            <th>Age</th>
+            <th>Department</th>
+            <th>On Duty</th>
+            <th>Marital Status</th>
+            <th>Performance</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </div>
+    <div id="altKisim">
+      <div class="dropdown">
+        <button class="dropbtn">SELECT FILTER</button>
+        <div class="dropdown-content">
+          <button id="button1">SUCCESS</button>
+          <button id="button2">MARRIED</button>
+          <button id="button3">SINGLES</button>
+          <button id="button4">ON DUTY</button>
+          <button id="button5">OFF DUTY</button>
+          <button id="button6">AGE 20-29</button>
+          <button id="button7">AGE 30-39</button>
+          <button id="button8">AGE 40-65</button>
+          <button id="button9">SORT BY PERFORMANCE</button>
+          <button id="button10">"TOP 5 EMPLOYEES"</button>
+        </div>
+      </div>
+
+      <ol id="ciktiAlani"></ol>
+    </div>
+    <div id="enAlt">
+      <h2 id="eOfThe"></h2>
+      <div id="newTableContainer"></div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
