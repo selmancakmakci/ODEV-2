@@ -10,7 +10,7 @@
   position: absolute;
 
   left: 50%; /* Butonun sağ tarafında açılması için */
-  top: 0.6em; /* Butonun üst hizasında açılması için */
+  top: 1px; /* Butonun üst hizasında açılması için */
 
   min-width: 160px;
 }
@@ -30,6 +30,7 @@
   background-color: azure;
   cursor: pointer;
   font-weight: bolder;
+  font-size: 12px;
 }
 .dropbtn {
   width: 7em;

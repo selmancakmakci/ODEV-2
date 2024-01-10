@@ -466,6 +466,74 @@ function createTop5Table() {
 
 document.getElementById("button10").addEventListener("click", createTop5Table);
 
+function createLast5Table() {
+  let top5Workers = workers.slice(15, 20);
+  let ayinElemani = document.getElementById("eOfThe");
+  ayinElemani.textContent = `"NEEDS A BOOST!" EMPLOYEES `;
+
+  const newTable = document.createElement("table");
+  newTable.id = "myNewTable";
+  const tableHead = newTable.createTHead();
+  tableHead.id = "myTableHeadId";
+  const headRow = tableHead.insertRow(0);
+
+  let header1 = headRow.insertCell(0);
+  let header2 = headRow.insertCell(1);
+  let header3 = headRow.insertCell(2);
+  let header4 = headRow.insertCell(3);
+  let header5 = headRow.insertCell(4);
+  let header6 = headRow.insertCell(5);
+  let header7 = headRow.insertCell(6);
+  let header8 = headRow.insertCell(7);
+  header1.textContent = "Name";
+  header1.className = "theadClass";
+  header2.textContent = "Surname";
+  header2.className = "theadClass";
+  header3.textContent = "Succesful";
+  header3.className = "theadClass";
+  header4.textContent = "Age";
+  header4.className = "theadClass";
+  header5.textContent = "Department";
+  header5.className = "theadClass";
+  header6.textContent = "On Duty";
+  header6.className = "theadClass";
+  header7.textContent = "Marital Status";
+  header7.className = "theadClass";
+  header8.textContent = "Performance";
+  header8.className = "theadClass";
+
+  const tableBody = document.createElement("tbody");
+  newTable.appendChild(tableBody);
+
+  top5Workers.forEach((worker) => {
+    let row = tableBody.insertRow();
+    let cell1 = row.insertCell(0);
+    let cell2 = row.insertCell(1);
+    let cell3 = row.insertCell(2);
+    let cell4 = row.insertCell(3);
+    let cell5 = row.insertCell(4);
+    let cell6 = row.insertCell(5);
+    let cell7 = row.insertCell(6);
+    let cell8 = row.insertCell(7);
+    cell1.textContent = worker.name;
+    cell2.textContent = worker.surname;
+    cell3.textContent = worker.isSuccessful;
+    cell4.textContent = worker.age;
+    cell5.textContent = worker.department;
+    cell6.textContent = worker.onDuty;
+    cell7.textContent = worker.maritalStatus;
+    cell8.textContent = worker.performance;
+  });
+
+  const container = document.getElementById("newTableContainer");
+  container.innerHTML = "";
+  container.appendChild(newTable);
+}
+
+document.getElementById("button11").addEventListener("click", createLast5Table);
+
+
+
 /*
 function filterworkersAndDisplay() {
     
