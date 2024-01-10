@@ -4,18 +4,15 @@
   width: 30em;
 }
 
-/* Dropdown içeriğini gizle */
 .dropdown-content {
   display: none;
   position: absolute;
 
-  left: 50%; /* Butonun sağ tarafında açılması için */
-  top: 1px; /* Butonun üst hizasında açılması için */
-
+  left: 50%;
+  top: 1px;
   min-width: 160px;
 }
 
-/* Butonlar */
 .dropdown-content button {
   color: black;
   padding: 6px 6px;
