@@ -534,30 +534,3 @@ document.getElementById("button11").addEventListener("click", createLast5Table);
 
 
 
-/*
-function filterworkersAndDisplay() {
-    
-    const resultElement = document.getElementById('ciktiAlani');
-    
-    const successfulworkers = workers.filter(student => student.isSuccessful);
-
-    // Filtrelenen öğrencilerin adlarını bir string'e dönüştür
-    const names = successfulworkers.map(student => student.name + " " + student.surname )
-
-    
-
-
-    successfulworkers.forEach(function(student) {
-        let  listItem = document.createElement('li');
-        listItem.textContent = names;
-        resultElement.appendChild(listItem);
-
-    });
-    
-    // Sonucu h1 etiketine yaz
-    //resultElement.textContent = names;
-}
-*/
-// Butona olay dinleyici ekle
-//const filterButton = document.getElementById('button');
-//filterButton.addEventListener('click', filterworkersAndDisplay);
